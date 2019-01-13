@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Success!
+{% endblock %}
+
+{% block content %}
+<h1>Success!</h1>
+
+{{ message }}
+
+{% for email in emails %}
+  <p>{{ email.email }}</p>
+{% endfor %}
+{% endblock %}
