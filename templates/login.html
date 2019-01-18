@@ -5,7 +5,9 @@ Login
 {% endblock %}
 
 {% block content %}
+
 <h1>Please login</h1>
+<p>{{ message }}</p>
 <div class="container">
   <form class="form-signin" action="{{ url_for('checklogin') }}" method="post">
   <img class="mb-4" src="/docs/4.2/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
